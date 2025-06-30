@@ -2743,7 +2743,7 @@ input, select, textarea {
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #4eb980;
+				color: #000;
 			}
 
 		#header strong, #header b {
@@ -2763,7 +2763,7 @@ input, select, textarea {
 		}
 
 		#header .logo {
-			background: #4eb980;
+			background: #000;
 			border-radius: 100%;
 			color: #ffffff;
 			cursor: default;
@@ -2796,7 +2796,7 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #000000;
+		background-color: #000;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
