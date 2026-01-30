@@ -255,23 +255,29 @@ footer {
   z-index: 1;
 }
 /* ===== Logo ===== */
+
 .watermark-logo {
   position: fixed;
   top: 20px;
   right: -200px;
   width: 1000px;          /* tamanho da logo */
-  opacity: 0.04;        /* bem apagada */
+  opacity: 0.04;         /* bem apagada */
   pointer-events: auto;
   z-index: 1;
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .watermark-logo:hover {
-  opacity: 0.12;        /* clareia sutilmente */
+  opacity: 0.12;         /* clareia sutilmente */
   transform: scale(1.03);
 }
 
-
+/* ===== Sumir no celular ===== */
+@media (max-width: 768px) {
+  .watermark-logo {
+    display: none;
+  }
+}
 
 
 
