@@ -36,32 +36,27 @@ const observer = new IntersectionObserver(entries => {
 
 cards.forEach(card => observer.observe(card));
 
-/* ===== LIGHTBOX PARA IMAGENS ===== */
-const modal = document.createElement('div');
-modal.classList.add('modal');
-modal.innerHTML = `
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImg">
-  <div id="caption"></div>
-`;
-document.body.appendChild(modal);
+/* ===== LIGHTBOX / MODAL PARA IMAGENS ===== */
+const modal = document.getElementById('modal');          // modal do HTML
+const modalImg = document.getElementById('modalImg');    // imagem grande
+const captionText = document.getElementById('caption');  // caption
+const closeBtn = modal.querySelector('.close');          // botão X
 
-const modalImg = document.getElementById('modalImg');
-const captionText = document.getElementById('caption');
-const closeBtn = document.querySelector('.close');
-
-document.querySelectorAll('.card img').forEach(img => {
+// adiciona evento para cada imagem do portfólio
+document.querySelectorAll('.card-img').forEach(img => {
   img.addEventListener('click', () => {
     modal.style.display = 'block';
-    modalImg.src = img.src;
-    captionText.innerText = img.alt || '';
+    modalImg.src = img.src;          // pega src da imagem clicada
+    captionText.innerText = img.alt; // pega alt da imagem
   });
 });
 
+// fecha ao clicar no X
 closeBtn.onclick = () => {
   modal.style.display = 'none';
 };
 
+// fecha ao clicar fora da imagem
 window.onclick = event => {
   if(event.target === modal) {
     modal.style.display = 'none';
