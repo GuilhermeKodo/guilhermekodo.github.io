@@ -273,11 +273,12 @@ footer {
 }
 
 /* ===== Sumir no celular ===== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .watermark-logo {
     display: none;
   }
 }
+
 
 
 
