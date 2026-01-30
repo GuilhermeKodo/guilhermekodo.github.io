@@ -259,7 +259,7 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 300px;          /* tamanho da logo */
+  width: 1000px;          /* tamanho da logo */
   opacity: 0.04;        /* bem apagada */
   pointer-events: auto;
   z-index: 1;
@@ -270,6 +270,7 @@ footer {
   opacity: 0.12;        /* clareia sutilmente */
   transform: scale(1.03);
 }
+
 
 
 
