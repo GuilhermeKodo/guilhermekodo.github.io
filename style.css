@@ -1,0 +1,20 @@
+:root {
+--bg-dark: #111;
+--card-dark: #1b1b1b;
+--text-dark: #e0e0e0;
+--bg-light: #f5f7fa;
+--card-light: #ffffff;
+--text-light: #222;
+--primary-blue: #1e88e5;
+}
+
+
+body { margin:0; font-family:Segoe UI, Arial; background:var(--bg-dark); color:var(--text-dark); }
+header { text-align:center; padding:40px; }
+.profile-pic { width:160px; height:160px; border-radius:50%; }
+.portfolio { display:grid; grid-template-columns:1fr; gap:40px; max-width:1000px; margin:auto; padding:20px; }
+@media(min-width:768px){ .portfolio{ grid-template-columns:1fr 1fr; } }
+.card { background:var(--card-dark); border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.5); }
+.card img { width:100%; height:300px; object-fit:cover; }
+.card-content { padding:20px; }
+.theme-toggle, .contact-btn { position:fixed; border:none; border-radius:50%; }
